@@ -1,5 +1,7 @@
 # AutoRoomEQ Player — Beta 0.3.0
 
+[![Version](https://img.shields.io/badge/version-0.3.0--beta-orange)](https://github.com/Rexxus69/AutoRoomEQ-Player-Beta-0.3.0)
+
 [![APK downloads](https://img.shields.io/github/downloads/Rexxus69/AutoRoomEQ-Player-Beta-0.3.0/v0.3.0-beta/total?label=APK%20downloads)](https://github.com/Rexxus69/AutoRoomEQ-Player-Beta-0.3.0/releases/download/v0.3.0-beta/AutoRoomEQPlayer-0.3.0-beta.apk)
 
 AutoRoomEQ Player is an Android audio player focused on high-quality playback, DSP correction, USB DAC use and network playback/control.
