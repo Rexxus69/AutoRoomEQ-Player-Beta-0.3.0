@@ -1,0 +1,147 @@
+name: Beta 0.3.3 feedback
+description: Tell us your device, what you tested, what went wrong and what you would like next.
+title: "[0.3.3-beta] Feedback – <device model>"
+labels: ["beta-feedback", "0.3.3-beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing AutoRoomEQ Player! Please fill in **Section 1 before installing** (you can submit the form and edit it later with your test results), then complete Sections 2–4 after using the app.
+        Do not post personal data, account passwords or server addresses.
+
+  # ── 1. Device ────────────────────────────────────────────────────────────────
+  - type: input
+    id: device
+    attributes:
+      label: "1.1 Phone / tablet model"
+      placeholder: "e.g. Motorola moto g84 5G, Samsung Galaxy Tab A7, Pixel 8"
+    validations:
+      required: true
+  - type: dropdown
+    id: android
+    attributes:
+      label: "1.2 Android version"
+      options:
+        - "Android 8 / 8.1"
+        - "Android 9"
+        - "Android 10"
+        - "Android 11"
+        - "Android 12 / 12L"
+        - "Android 13"
+        - "Android 14"
+        - "Android 15"
+        - "Android 16"
+        - "Other / don't know"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: "1.3 Installation"
+      options:
+        - "Fresh install (no previous AutoRoomEQ Player)"
+        - "Update over a previous beta"
+        - "Reinstalled after uninstalling a previous beta"
+    validations:
+      required: true
+  - type: dropdown
+    id: output
+    attributes:
+      label: "1.4 Main audio output used"
+      multiple: true
+      options:
+        - "USB DAC / dongle"
+        - "Wired headphones (phone jack)"
+        - "Bluetooth"
+        - "Phone speaker"
+        - "UPnP / network playback to this phone"
+    validations:
+      required: true
+  - type: input
+    id: dac
+    attributes:
+      label: "1.5 USB DAC and headphones / IEM models (if any)"
+      placeholder: "e.g. Steinberg IXO22 + Moondrop Aria, Apple USB-C dongle + HD 681"
+  - type: dropdown
+    id: storage
+    attributes:
+      label: "1.6 Where your music files are"
+      multiple: true
+      options:
+        - "Internal storage"
+        - "microSD card"
+        - "Personal server (Navidrome / Subsonic)"
+        - "Only online sources"
+
+  # ── 2. What you tested ──────────────────────────────────────────────────────
+  - type: checkboxes
+    id: tested
+    attributes:
+      label: "2. What you tested (tick what worked)"
+      options:
+        - label: "Library scan: my local tracks and albums appear"
+        - label: "Local playback FLAC / WAV / MP3"
+        - label: "Bypass shows Bit-perfect with a USB DAC"
+        - label: "Headphone correction (AutoEQ preset) with Loudness match ON in A/B"
+        - label: "RoomEQ WAV FIR import"
+        - label: "Streaming search (catalog mode) – results relevant to what I typed"
+        - label: "Download of a streaming track with quality check result"
+        - label: "Downloads: cancel / retry / resume after network loss"
+        - label: "Sources: enable/disable/reorder providers"
+        - label: "Personal server (Subsonic/Navidrome) search and playback"
+        - label: "Automatic language (follows the phone) and manual override"
+        - label: "Web Remote from a PC (link shown in the app, pairing code)"
+        - label: "UPnP renderer from another app"
+
+  # ── 3. Problems ─────────────────────────────────────────────────────────────
+  - type: checkboxes
+    id: problems
+    attributes:
+      label: "3.1 Problems found (tick all that apply)"
+      options:
+        - label: "App crashes or closes by itself"
+        - label: "App does not install / update (signature conflict, parsing error)"
+        - label: "Library empty or incomplete"
+        - label: "Wrong or missing metadata / cover art"
+        - label: "No sound, or sound from the phone speaker instead of the DAC"
+        - label: "Clicks, dropouts, stutter or buffering"
+        - label: "Wrong playback speed or pitch"
+        - label: "USB DAC not detected / Bit-perfect not shown"
+        - label: "Headphone EQ sounds wrong, too quiet or distorted"
+        - label: "RoomEQ FIR import rejected or sounds wrong"
+        - label: "Streaming search: irrelevant results or wrong versions (live, remix, cover…)"
+        - label: "Download fails, never finishes or the file is not in the library"
+        - label: "Quality check result looks wrong"
+        - label: "Web Remote does not connect or says 'not paired'"
+        - label: "UPnP renderer not found or stops"
+        - label: "Texts untranslated, cut off or overlapping"
+        - label: "Battery drain or phone gets hot"
+  - type: textarea
+    id: problem_details
+    attributes:
+      label: "3.2 Describe each problem"
+      description: "What you did, what you expected, what happened. Include the file format (e.g. FLAC 24/96) and whether it happens every time. Screenshots or screen recordings are welcome."
+      placeholder: |
+        1. Steps: ...
+           Expected: ...
+           Happened: ...
+           Every time? yes/no
+    validations:
+      required: false
+
+  # ── 4. Suggestions ──────────────────────────────────────────────────────────
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: "4. Suggestions: what should we improve or add next?"
+      placeholder: "Features you miss, sources you would like, anything confusing in the interface…"
+  - type: dropdown
+    id: rating
+    attributes:
+      label: "Overall, how usable is this beta for you?"
+      options:
+        - "5 – I use it every day"
+        - "4 – Good, a few issues"
+        - "3 – Usable with workarounds"
+        - "2 – Hard to use"
+        - "1 – Unusable on my device"
