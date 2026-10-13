@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.3.4-beta - 2026-10-13
+### AutoRoomEQ Desktop (Windows)
+- Pairing with AutoRoomEQ Desktop: built-in QR reader or 6-digit code
+- Remote for the PC player, on home Wi-Fi and on mobile data
+- Two-way exchange with the PC: RoomEQ presets, playlists, favourites, microphone calibration
+- "Send the link to your PC" to share the download link of the Windows app
+### Library
+- Fixed empty or incomplete library with music on microSD (seen on Realme and Huawei)
+- Saved library shown at once and refreshed in the background at every start
+- Faster first scan: composer and genre read afterwards, in the background
+- Music not indexed by Android is found on storage and microSD and indexed
+- DSF/DFF, APE, WavPack, MKA and TAK files listed
+- Music access: the button asks again, or opens the app settings if access was denied for good
+### Quality check
+- Direct playback check for DAPs: unmixed PCM at 44.1 / 96 / 192 kHz on the output in use
+- Android 14+: shows whether the bit-perfect mixer is offered for the connected USB DAC
+- Playback chain: "Android output (no USB DAC)" for phone speaker and wired headphones
+- Technical detail no longer cut off
+### Other
+- New app icon
+- The whole interface follows the language chosen in the app
+- RoomEQ texts updated for the 2.1 engine, scenario names translated
+- Synced lyrics: offset buttons moved right above the lyric line
+
 ## 0.3.3-beta - 2026-09-25
 
 ### Room correction (aligned with AutoRoomEQ Web 2.1.4)
