@@ -1,7 +1,7 @@
-name: Beta 0.3.4 feedback
+name: Beta 0.3.5 feedback
 description: Tell us your device, what you tested, what went wrong and what you would like next.
-title: "[0.3.4-beta] Feedback – <device model>"
-labels: ["beta-feedback", "0.3.4-beta"]
+title: "[0.3.5-beta] Feedback – <device model>"
+labels: ["beta-feedback", "0.3.5-beta"]
 body:
   - type: markdown
     attributes:

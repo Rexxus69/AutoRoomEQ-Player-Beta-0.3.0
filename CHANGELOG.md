@@ -1,5 +1,63 @@
 # Changelog
 
+## 0.3.5-beta - 2026-10-14
+
+### DSD
+- DSF / DFF playback (DSD64, DSD128 and higher)
+- DSD → PCM conversion (default, any DAC; correction and volume available)
+- DoP to DoP-capable USB DACs (experimental, opt-in, automatic fallback to PCM)
+
+### CUE sheets
+- One-file albums with CUE split into tracks (external .cue, FLAC CUESHEET tag and block)
+- "Add a music folder" in the library: finds external .cue and DSD files hidden by Android 13+
+
+### Output
+- DAC volume slider with USB direct: hardware volume (stays bit-perfect) or software volume with TPDF dither
+- Correction remembered per output (USB DAC, wired, Bluetooth, speaker) and restored on switch
+
+### Library
+- Library shown in seconds, full storage/microSD search completes it in the background
+- Higher limits for the storage/microSD search (large cards were cut)
+- "Add a music folder" reads every audio file Android does not list
+- Library report (counts only) to copy into a GitHub issue
+
+### Network
+- UPnP/DLNA media server: the library can be browsed and played from PC, network players and apps (opt-in)
+
+### Audio settings
+- ReplayGain Off / Track / Album with preamp (ReplayGain and R128 tags; untagged tracks measured with EBU R128 and cached; peak-limited; applied by the DAC volume control when available, so playback stays bit-perfect)
+- Upsampling on USB direct: ×2, ×4, 96 or 192 kHz, linear or minimum phase
+- Sleep timer: 15 / 30 / 60 min or end of track
+
+### Widget and lock screen
+- Home screen widget with artwork and controls, updated also with the app closed
+- Album artwork on the lock screen and in the notification
+
+### Headphones
+- Crossfeed Off / Light / Medium / Strong (bs2b model)
+
+### Streaming
+- FLAC-in-Ogg radios (e.g. Radio Paradise FLAC) play through the integer FLAC decoder
+- Radio buffering: real prebuffer, reserve kept in memory, clean refill on network stalls
+
+### Artwork and metadata
+- Online artwork search starts at once, in parallel with the fingerprint
+- Stricter cover matching (no generic folder names as album, exact song match without artist, recognised metadata used for the cover)
+- PDF booklet cover for the playing track (also microSD), preferred over online covers
+- MusicBrainz badge only on a real match
+- Composer / genre / artist from file tags filled in progressively and kept across rescans
+
+### Player
+- Quality check with spectrum chart, single status badge on the artwork
+- Faster, clean seek in MP3, AAC/M4A, Ogg, Opus
+- Library keeps view and search when switching to the player and back
+- Output memory no longer flips during a USB session reopen
+
+### Other
+- Bit-perfect badge explains why playback is not bit-perfect; tap to open the quality check
+- Messages and notifications follow the app language everywhere
+- TPDF dither when samples are recomputed on USB direct
+
 ## 0.3.4-beta - 2026-10-13
 ### AutoRoomEQ Desktop (Windows)
 - Pairing with AutoRoomEQ Desktop: built-in QR reader or 6-digit code
