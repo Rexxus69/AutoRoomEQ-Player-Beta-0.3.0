@@ -88,3 +88,6 @@ AutoRoomEQ Player is an Android audio player focused on high-quality playback, D
 [Download AutoRoomEQ Player 0.3.5 Beta APK](https://github.com/Rexxus69/AutoRoomEQ-Player-Beta-0.3.0/releases/download/v0.3.5-beta/AutoRoomEQPlayer-0.3.5-beta.apk)
 
 The Remote works on the same local network as the player. The app displays current URLs because local IP addresses can change. If Android reports a signature conflict with a previous beta, uninstall the previous build before installing this APK.
+
+
+© DSPxLab — AutoRoomEQ. Freeware beta for testing: all rights reserved. Redistribution and reverse engineering are not allowed. Source code is not public.
