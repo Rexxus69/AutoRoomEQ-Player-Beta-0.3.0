@@ -41,9 +41,6 @@ AutoRoomEQ Player is an Android audio player focused on high-quality playback, D
 ### App colour
 - **System** (Material You, Android 12+), Teal, Amber, Blue, Burgundy or Green: accent and backgrounds of player and streamer together
 
-### Beta statistics
-- The opt-in anonymous statistics now also include phone model, USB DAC, feature use, listening minutes, library formats and technical errors (never titles, files or searches); testers are asked again
-
 ## Main features
 - UPnP renderer mode
 - HTML remote control on the local network
