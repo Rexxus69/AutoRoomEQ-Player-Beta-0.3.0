@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.3.6-beta - 2026-11-24
+
+### Streamer mode
+- Full-screen landscape player for a phone dedicated to the hi-fi; optional Home app (launcher) so it starts at boot
+- Analogue VU meters (blue backlit / studio cream) after 20 s idle, time-aligned with the audio output
+- Radio (favourites, recent), Library (folders, play all), Network and Correction pages inside the streamer
+- Single volume control: DAC hardware volume on USB direct, Android media volume otherwise
+
+### System-wide correction (Android 10+)
+- RoomEQ FIR applied to other apps' audio (playback capture); apps that forbid capture are untouched
+- Low-latency mode (minimum-phase FIR, small blocks) for video apps
+- One-time setup through the phone's Wireless debugging, no PC needed (Android 11+)
+
+### Network
+- UPnP control point: play on UPnP/DLNA renderers (OpenHome queue or UPnP AV), renderer volume, transport controls
+- RoomEQ correction applied to local files sent to the renderer
+
+### Compatibility
+- minSdk 24 (Android 7.0), armeabi-v7a native libraries, AAudio loaded at runtime
+- Let's Encrypt root certificates bundled for Android 7 HTTPS
+- USB hosts that never complete isochronous transfers are detected and remembered: playback uses Android's USB route
+- Web radio: no hang with AAC/ADTS streams on old extractors, faster decode loop, output started once, network/buffer diagnostics
+
+### UI
+- App colour: System (Material You) or fixed palettes, applied to accent and backgrounds of player and streamer
+- New Home feature list; new texts translated (EN/IT/DE/FR)
+- Web remote: full parity with the app (radio memories, play all/shuffle, queue, playlists, audio settings, UPnP cast, track tools, Music ID/Flow, downloads, output options)
+- Beta statistics (opt-in): device, USB DAC, feature use, listening minutes, library formats, errors and crashes; consent asked again
+
 ## 0.3.5-beta - 2026-10-14
 
 ### DSD
